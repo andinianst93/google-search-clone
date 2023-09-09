@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50w: Google Advanced Search Clone</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png"></head>
+<body class="bg-white h-full min-w-[400px] block font-sans">
+    <header class="lg:flex lg:items-center lg:justify-between py-4 px-[30px] text-xs">
+        <div>
+            <img src="/images/google-logo-adv.png" alt="google logo" class="w-[75px] pt-1">
+        </div>
+        <ul class="text-zinc-900 capitalize font-medium flex items-center lg:justify-center space-x-5 md:ps-8 ps-0 mt-4">
+            <li><a href="index.html" class=" hover:text-blue-700">All Search</a></li>
+            <li><a href="image.html" class=" hover:text-blue-700">Images</a></li>
+            <li><a href="advanced_search.html" class=" hover:text-blue-700">Advanced Search</a></li>
+        </ul>
+    </header>
+    <main class="h-screen">
+        <section class="divide-y-2 divide-[#ebebeb]">
+            <h1 class="text-[#d93025] text-xl px-[30px] py-[25px]">Advanced Search</h1>
+            <div></div>
+        </section>
+        <section class="px-[30px] py-[35px] text-black">
+            <div>
+                <h2>Find pages with...</h2>
+                <p class="text-right text-gray-500 text-xs font-semibold max-w-[948px]">To do this in the search box.</p>
+            </div>
+            <div class="mt-6 text-xs max-w-6xl">
+                <form action="https://www.google.com/search">
+                    <div class="grid grid-cols-3 mb-6">
+                        <div>
+                            <label for="words" class="mr-4">all these words:</label>
+                        </div>
+                        <div>
+                            <input type="text" value autofocus="autofocus" name="as_q" class="border border-solid border-[#d9d9d9] h-[30px] px-[8px] py-[1px] w-full text-left">
+                        </div>
+                        <div class="ml-4 text-xs flex items-center">Type the important words: tri-colour rat terrier</div>
+                    </div>
+                    <div class="grid grid-cols-3 mb-6">
+                        <label for="words" class="mr-4">this exact word or phrase:</label>
+                        <input type="text" value autofocus="autofocus" name="as_epq" class="border border-solid border-[#d9d9d9] h-[30px] px-[8px] py-[1px] w-full text-left">
+                        <div class="ml-4 text-xs flex items-center">Put exact words in quotes: "rat terrier"
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 mb-6">
+                        <label for="words" class="mr-4">any of these words:
+                        </label>
+                        <input type="text" value autofocus="autofocus" name="as_oq" class="border border-solid border-[#d9d9d9] h-[30px] px-[8px] py-[1px] w-full text-left">
+                        <div class="ml-4 text-xs flex items-center">Type OR between all the words you want: miniature OR standard
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 mb-6">
+                        <label for="words" class="mr-4">none of these words:
+                        </label>
+                        <input type="text" value autofocus="autofocus" name="as_eq" class="border border-solid border-[#d9d9d9] h-[30px] px-[8px] py-[1px] w-full text-left">
+                        <div class="ml-4 text-xs flex items-center">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                        </div>
+                    </div>
+                    <div class="mt-12 flex space-x-3 text-sm items-end justify-end">
+                        <div class="bg-blue-500 shadow text-white px-4 py-2">
+                            <input type="submit" value="Advanced Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-[#f2f2f2] text-sm text-[#70757a]">
+        <div class="grid grid-cols-1 divide-y divide-solid divide-[#dadce0]">
+            <div class="w-full mx-auto py-[15px] px-[30px]">
+                Indonesia</div>
+            <div class="w-full mx-auto py-[15px] px-[30px] md:flex md:justify-between md:items-center grid grid-cols-2">
+                <ul class="md:flex md:items-center md:space-x-6 md:space-y-0 space-y-2">
+                    <li>About</li>
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>How Search Works</li>
+                </ul>
+                <ul class="md:flex md:items-center md:space-x-6 md:space-y-0 space-y-2">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

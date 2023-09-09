@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#202124] text-[#bdc1c6] h-full min-w-[400px] block font-sans
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 15px 30px;
+}
+
+@media (max-width: 640px) {
+    .header {
+        display: none;
+    }
+}
